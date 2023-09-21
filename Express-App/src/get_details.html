@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCareium</title>
+    <link
+    rel="stylesheet"
+    href="/css/get_details.css"
+  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+<body>
+    <div><header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create_doctor.html">Create Doctor</a></li>
+            <li><a href="add_patient_details.html">Add Patient Details</a></li>
+            <li><a href="get_details.html">Get Details</a></li>
+            <li><a href="manage_access.html">Manage Access</a></li>
+        </ul>
+    </nav>
+    </header>
+  <div class = "belowHeader"> 
+    <h1>Get  data from HeathCareium<h1> 
+  <div class="main-container">
+    <div class="flex-container1">
+        <div> 
+          <h1>Doctor Details</h1>
+                <form>
+                   
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name"><br>
+                    <label for="id">Doctor Id</label><br>
+                    <input type="text" id="doctorIdGet" name="id"><br><br>
+                    <button type="button" id="getDoctorDetails" class="btn btn-primary">
+                        Submit
+                      </button>
+                  </form>
+        </div>
+        <div id="getDoctor">
+
+        </div>
+    
+    </div>
+    <div class="flex-container2">
+      <div >
+         <h1>Patient Health Records</h1>
+              <form>
+                 
+                  <label for="name">Name:</label><br>
+                  <input type="text" name="name"><br>
+                  <label for="id">Patient Id</label><br>
+                  <input type="text" id="patientIDGet" name="id"><br><br>
+                  <button type="button" id="getPatientDetails" class="btn btn-primary">
+                      Submit
+                    </button>
+                </form>
+        </div>
+        <div id="getPatient">
+
+        </div>
+    </div>
+    <div class="flex-container3">
+      <div >
+        <h1>Insurance Details</h1>
+              <form>
+                  <label for="name">Name:</label><br>
+                  <input type="text" name="name"><br>
+                  <label for="id">Patient Id</label><br>
+                  <input type="text" id="patientIdInsurance" name="id"><br><br>
+                  <button type="button" id="getPatientPremium" class="btn btn-primary">
+                      Submit
+                    </button>
+                </form>
+        </div>
+        <div id="getInsurance">
+
+        </div>
+    </div>
+
+
+  </div> 
+
+
+  </div>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="js/app.js"></script>
+</html>  

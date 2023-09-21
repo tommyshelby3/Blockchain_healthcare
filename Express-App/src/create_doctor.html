@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCareium</title>
+    <link
+    rel="stylesheet"
+    href="/css/create_doctor.css"
+  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+<body>
+    <div class="flex-container">
+    <div><header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create_doctor.html">Create Doctor</a></li>
+            <li><a href="add_patient_details.html">Add Patient Details</a></li>
+            <li><a href="get_details.html">Get Details</a></li>
+            <li><a href="manage_access.html">Manage Access</a></li>
+        </ul>
+    </nav>
+    </header>
+    </div>
+    <div class="Form">
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="doctorName" name="name"><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="doctorID" name="address"><br><br>
+        <label for="name">Specialty:</label><br>
+        <input type="text" id="doctorSpecialty" name="name"><br>
+        <button type="button" id="createDoctor" class="btn btn-primary">
+            Submit
+          </button>
+      </form>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="js/app.js"></script>
+</html>  
